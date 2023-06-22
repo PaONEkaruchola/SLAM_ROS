@@ -1,0 +1,23 @@
+gbot_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  flw_j_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: flw_j
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+   frw_j_position_controller:
+    type: effort_controllers/JointPositionController
+    joint:  frw_j
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  blw_j_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: blw_j
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  brw_j_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: brw_j
+    pid: {p: 100.0, i: 0.01, d: 10.0}

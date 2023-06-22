@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<robot name="gbot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="flw_j_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="flw_j">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="flw_j_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name=" frw_j_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name=" frw_j">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name=" frw_j_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="blw_j_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="blw_j">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="blw_j_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="brw_j_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="brw_j">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="brw_j_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>
